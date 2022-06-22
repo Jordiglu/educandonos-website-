@@ -1,1 +1,65 @@
-<p>contact works!</p>
+<!-- Contact-->
+<section class="contact-section" id="contact">
+    <div class="container container-form align-items-center d-lg-flex justify-content-lg-between  px-4 px-lg-2 mb-sm-5">
+        <div class="col-lg-4 col-sm-12">
+            <h3 class="mb-4 text-center">Contacto</h3>
+            <div id="form-message-warning" class="mb-4"></div>
+            <form action="https://formsubmit.co/info@educandonos.net" method="POST" id="contactForm"
+                class="flex center">
+                <div class="form-row">
+                    <div class="col input start">
+                        <input type="text" formControlName="name" class="form-control rounded bg-light text-black"
+                            placeholder="Nombre" required>
+                    </div>
+                    <div class="col input">
+                        <input type="email" formControlName="email" class="form-control rounded bg-light text-black"
+                            placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea formControlName="projectDetails"
+                        class="form-control rounded bg-light mt-2 mb-2 text-black" rows="5" id="cmessage"
+                        placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="d-flex justify-content-center mb-5">
+                    <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-3 mb-md-3">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-brands fa-whatsapp" style="color:green"></i>
+                        <!-- <i class="fas fa-mobile-alt text-primary mb-2"></i> -->
+                        <h4 class="text-uppercase m-0">Telèfono</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">634 47 28 26</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-3">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-envelope text-primary"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50"><a href="#!"> info@educandonos.net</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-3">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Dirección</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50"> Mas Pere riera, 08500, Vic, Barcelona</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social d-flex justify-content-center">
+        </div>
+    </div>
+</section>

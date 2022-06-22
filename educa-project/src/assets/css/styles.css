@@ -2,7 +2,7 @@
 /*!
 * Start Bootstrap - Grayscale v7.0.4 (https://startbootstrap.com/theme/grayscale)
 * Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/hester/LICENSE)
 */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -4056,7 +4056,8 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #64a19d;
+  color: black !important;
+  font-weight: 500;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4149,6 +4150,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: #c46404!important;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11474,13 +11476,13 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: black;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: black;
+  border: 0.5px solid black;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11555,7 +11557,13 @@ body {
   letter-spacing: 0.15rem;
   border: 0;
 }
-
+.container-jumbotron{
+  text-align: center;
+  padding-top: 28rem;
+}
+.h3-margin{
+  margin-top: 70px;
+}
 .masthead {
   position: relative;
   width: 100%;
@@ -11602,27 +11610,94 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
+  
 }
+@media (max-width: 600px) {
+  .masthead {
+  background-size: contain !important;
+  padding: 0rem 0;
+  min-height: 0rem;
+  }
+  .container-jumbotron{
+    text-align: center;
+    padding-top:0rem;
+  }
+  .h3-margin{
+    margin-top: 14rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .logo{
+    height: 60px;
+  }
+ 
+}
+
+/* @media (max-width: 600px) {
+  .masthead {
+  background-size: contain !important;
+  padding: 0rem 0;
+  min-height: 0rem;
+  }
+  .container-jumbotron{
+    text-align: center;
+    padding-top:0rem;
+  }
+  .h3-margin{
+    margin-top: 14rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .logo{
+    height: 60px;
+  }
+ 
+} */
 
 .about-section {
   padding-top: 5rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  /* background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
+  background-color:  whitesmoke ;
   border: 1px solid whitesmoke;
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.service-section {
+  background-color: white;
+}
+.projects-section {
+  background-color: whitesmoke;
+  padding: 5rem 0;
+  border: 1px solid whitesmoke;
 }
 
-.projects-section {
-  padding: 5rem 0;
-}
+/* .container {
+  display:inline-block;
+  margin:0 10px;
+  text-align:center;
+} */
+
+
 .projects-section .featured-text {
   padding: 2rem;
 }
+.projects-section p{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
 @media (min-width: 992px) {
   .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    padding: 2rem;
+    border-left: 0.5rem solid #2568FB;
+  }
+  .projects-section .featured-text-2{
+    padding:2rem;
+    border-right: 0.5rem solid #2568FB;
   }
 }
 .projects-section .project-text {
@@ -11639,32 +11714,19 @@ body {
     width: 30%;
   }
 }
+.img-size{
+  width: 100%;
+}
 
-.signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-.signup-section .form-signup input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
 
 .contact-section {
   padding-top: 5rem;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  /* border-bottom: 0.25rem solid #64a19d; */
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -11698,8 +11760,11 @@ body {
 
 .footer {
   padding: 5rem 0;
+  background-color: #c46404!important;
+  color: black !important;
 }
-.container-jumbotron{
-  text-align: center;
-  padding-top: 27rem;
+.footer div{
+  color: black !important;
 }
+
+
